@@ -1,0 +1,49 @@
+schema-version: v3
+kind: plugin
+metadata:
+  name: discord-bot-template-plugin
+  display-name: discord-bot-template-plugin
+  description: A plugin to create template discord bot files.
+  version: 0.0.1
+spec:
+  type: app
+  compatibility:
+    - python
+  docs:
+    pt-br: docs/pt-br/docs.md
+    en-us: docs/en-us/docs.md
+  single-use: False
+  repository: https://github.com/breno-hof/discord-bot-template-plugin
+  technologies: # Ref: https://docs.stackspot.com/create-use/create-content/yaml-files/plugin-yaml/#technologies-1
+    - Api
+  stk-projects-only: false
+  inputs:
+    - label: Type the project's name
+      name: project_name
+      type: text
+      required: true
+      default: discord-bot
+      help: "Inform project's name (e.g.: discord-bot)"
+    - label: Type the project's description
+      name: description_text
+      type: text
+      required: false
+      default: placeholder description
+      help: "Inform project's description (e.g.: A discord bot)"
+    - label: Type the project's license
+      name: license_name
+      type: text
+      required: false
+      default: MIT
+      help: "Inform project's license (e.g.: MIT)"
+    - label: Type the author's name
+      name: author_name
+      type: text
+      required: true
+      default: breno-hof
+      help: "Inform author's name (e.g.: breno-hof)"
+    - label: Type the repository's url
+      name: repository_url
+      type: text
+      required: true
+      help: "Inform repository's url (e.g.: https://github.com/breno-hof/gyro-discord-bot/)"
