@@ -4,8 +4,11 @@ spec:
   type: plugin
   mode: apply
   inputs:
-    resource: "Customer"
-    method: "PATCH"
+    project_name: discord-bot
+    description_text: placeholder description
+    license_name: MIT
+    author_name: breno-hof
+    repository_url: https://github.com/breno-hof/discord-bot
   inputs-envs: {}
   requires:
     connections: []

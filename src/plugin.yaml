@@ -8,14 +8,16 @@ metadata:
 spec:
   type: app
   compatibility:
-    - python
+    - typescript
+    - node
+    - discord.js
   docs:
     pt-br: docs/pt-br/docs.md
     en-us: docs/en-us/docs.md
-  single-use: False
+  single-use: True
   repository: https://github.com/breno-hof/discord-bot-template-plugin
   technologies: # Ref: https://docs.stackspot.com/create-use/create-content/yaml-files/plugin-yaml/#technologies-1
-    - Api
+    - Typescript
   stk-projects-only: false
   inputs:
     - label: Type the project's name

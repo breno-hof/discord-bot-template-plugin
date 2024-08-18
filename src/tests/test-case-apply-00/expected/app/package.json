@@ -1,0 +1,31 @@
+{
+  "name": "discord-bot",
+  "version": "0.0.1",
+  "description": "placeholder description",
+  "main": "App.js",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "npm run build && node ./build/App.js",
+    "register": "npm run build && node ./build/RegisterCommands.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/breno-hof/discord-bot.git"
+  },
+  "author": "@breno-hof",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/breno-hof/discord-bot/issues"
+  },
+  "homepage": "https://github.com/breno-hof/discord-bot#readme",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5",
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.4.5"
+  }
+}
